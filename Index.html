@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/407dd94adc.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Work">My Work</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Testimonial">Testimonial</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="desc">
+        <div class="desc-left">
+            <div>
+                <marquee behavior="scroll" direction="up" scrollamount="2" Medium...>
+                    <h2><b> WELCOME TO YOU ALL</h2>
+                    <br>
+                    <h2><span>Hello,I'm Fahad Masroor.</span> </h2>
+                    <br>
+                    <h2><span>Exceptional Web Developer</span></h2>
+                    <br>
+                    <h2> I am a passionate and motivated front-end web developer who has
+                        recently embarked on a journey to make the digital world more interactive, visually appealing,
+                        and
+                        user-friendly.</h2>
+                </marquee>
+                <br>
+                <div class="button-1">
+                    <div class="btn1 fa-bounce">
+                        <button>
+                            <h4>Hire Me</h4>
+                        </button>
+                    </div>
+                    <div class="btn2 fa-bounce">
+                        <button>
+                            <h4>Download Cv</h4>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="desc-right">
+            <div class="right-block">
+                <div class="slef-img">
+                    <marquee behavior="scroll" direction="up" scrollamount="3" Medium..> <img src="images/fahad.jpg"
+                            alt=""></marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            // document.getElementById("sidemenu").style.display = "none";
+            // sidemenu.style.display = "none";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-150px";
+        }
+    </script>
+</body>
+
+</html>

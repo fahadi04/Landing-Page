@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #7AB2B2;
+    /* height: 50vh; */
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 7px;
+    /* height: 20vh; */
+    margin-top: 15px;
+}
+
+nav {
+    font-weight: 500;
+    font-size: 25px;
+    text-wrap: wrap;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav ul :hover {
+    font-size: 30px;
+    color: #0e0eb2;
+    font-style: italic;
+    font-weight: 300;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.desc {
+    margin-top: 40px;
+    padding-left: 5rem;
+    display: flex;
+    font-size: large;
+    color: black;
+}
+
+.desc-left {
+    flex-basis: 80%;
+    font-size: large;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.desc-left h2 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.desc-left span {
+    font-size: bold;
+    font-weight: 500;
+    text-wrap: wrap;
+}
+
+.button-1 {
+    display: flex;
+    cursor: pointer;
+    flex-basis: 85%;
+}
+
+button {
+    font-weight: 300;
+    background-color: #7AB2B2;
+    border-radius: 25px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button :hover {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transform-style: initial;
+    border: hidden;
+    color: #0e0eb2;
+}
+
+.btn1 {
+    font-size: 16px;
+    flex-basis: 50%;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.Social-link {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5px;
+    /* float: right; */
+}
+
+.desc-right {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-block {
+    height: 92%;
+}
+
+.self-img {
+    height: 35%;
+}
+
+img {
+    height: 30rem;
+    width: 30rem;
+    padding-right: 2rem;
+    margin-top: -5rem;
+    border-radius: 25%;
+}
+
+img-wrapper {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+img {
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Other styling elements, that are not necessary for the example */
+
+img-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+
+/* ----------------Media Querry---------- */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        width: 70%;
+        height: 60%;
+    }
+
+    .container {
+        height: 50%;
+        font-size: 16px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 30px;
+        /* padding-left: 40rem; */
+    }
+
+    nav ul {
+        /* background: #000080; */
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: top 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    img {
+        /* width: 60%; */
+        position: relative;
+    }
+}
